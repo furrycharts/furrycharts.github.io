@@ -64,15 +64,26 @@ p {
     background-color: #777;
 }
 
+/* Adjust styles for smaller screens */
 @media (max-width: 768px) {
     .container {
         padding: 20px; /* Add some padding to the container for better spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .year-button {
         width: 50px;
         height: 50px;
         font-size: 0.6em; /* Adjust font size for smaller screens */
+        margin: 5px; /* Add some margin between buttons */
     }
     
     p {
