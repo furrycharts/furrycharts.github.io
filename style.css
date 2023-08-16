@@ -2,18 +2,25 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 
 h1 {
     font-size: 2em;
-    text-align: center;
-    color: #333;
+    color: white; /* Set text color to white */
+}
+
+p {
+    font-size: 0.8em;
+    color: #999; /* Use a slightly different shade for the smaller text */
 }
