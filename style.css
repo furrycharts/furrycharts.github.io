@@ -63,3 +63,19 @@ p {
 .go-back-button:hover {
     background-color: #777;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Add some padding to the container for better spacing */
+    }
+
+    .year-button {
+        width: 50px;
+        height: 50px;
+        font-size: 0.6em; /* Adjust font size for smaller screens */
+    }
+    
+    p {
+        font-size: 0.7em; /* Adjust font size for smaller screens */
+    }
+}
