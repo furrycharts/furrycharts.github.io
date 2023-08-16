@@ -46,3 +46,20 @@ p {
 .year-button:hover {
     background-color: #555;
 }
+
+.go-back-button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.go-back-button:hover {
+    background-color: #777;
+}
