@@ -80,8 +80,7 @@ p {
         text-align: center;
         border: 1px solid white;
         font-size: 0.9em;
-        word-wrap: break-word;
-        white-space: normal;
+        white-space: normal; /* Reset white-space for small screens */
         min-width: 100px; /* Minimum width for columns */
     }
 }
