@@ -11,7 +11,11 @@ body {
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Maintain full viewport height */
     padding: 20px;
 }
 
