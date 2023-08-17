@@ -1,92 +1,69 @@
-body {
+/* Reset default margin and padding */
+body, h1, p {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: black;
     color: white;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     text-align: center;
+    padding: 20px;
 }
 
 h1 {
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 0.8em;
+    margin-bottom: 20px;
 }
 
 .button-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
 .year-button {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #333;
     color: white;
     text-align: center;
-    line-height: 50px;
-    margin: 0 10px;
+    line-height: 60px;
     text-decoration: none;
     font-size: 0.8em;
+    transition: background-color 0.3s;
 }
 
 .year-button:hover {
     background-color: #555;
 }
 
-.go-back-button {
-    display: inline-block;
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    background-color: #555;
-    color: white;
-    border-radius: 15px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.go-back-button:hover {
-    background-color: #777;
-}
-
-/* Adjust styles for smaller screens */
-@media (max-width: 768px) {
+/* Media Query for Small Screens */
+@media (max-width: 480px) {
     .container {
-        padding: 20px; /* Add some padding to the container for better spacing */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 10px;
     }
 
-    .button-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    h1 {
+        font-size: 1.5em;
     }
 
     .year-button {
         width: 50px;
         height: 50px;
-        font-size: 0.6em; /* Adjust font size for smaller screens */
-        margin: 5px; /* Add some margin between buttons */
-    }
-    
-    p {
-        font-size: 0.7em; /* Adjust font size for smaller screens */
+        line-height: 50px;
     }
 }
