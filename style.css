@@ -52,7 +52,7 @@ p {
 }
 
 /* Media Query for Small Screens */
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
     .container {
         padding: 10px;
     }
