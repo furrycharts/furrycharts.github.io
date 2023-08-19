@@ -126,7 +126,7 @@ table td:nth-child(2) {
 .extra-button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 0 10px; /* Equal margin on both sides */
+    margin: 0 5px; /* Equal margin on both sides */
     border-radius: 30px; /* For an oval shape, adjust the border radius */
     background-color: #333;
     color: white;
@@ -134,6 +134,10 @@ table td:nth-child(2) {
     text-decoration: none;
     font-size: 1em;
     transition: background-color 0.3s;
+}
+
+.extra-button:not(:last-child) {
+    margin-right: 10px; /* Add margin to all except the last button */
 }
 
 .extra-button:hover {
