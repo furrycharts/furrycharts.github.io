@@ -118,12 +118,9 @@ table td:nth-child(2) {
 
 .extra-button-container {
     display: flex;
-    justify-content: space-between; /* Distribute buttons evenly */
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
-    width: 100%; /* Ensure full width */
-    max-width: 600px; /* Limit container width */
-    margin: 0 auto; /* Center the container horizontally */
 }
 
 .extra-button {
@@ -136,6 +133,13 @@ table td:nth-child(2) {
     text-decoration: none;
     font-size: 1em;
     transition: background-color 0.3s;
+}
+
+/* Equal margin for all buttons */
+.extra-button:nth-child(1),
+.extra-button:nth-child(2),
+.extra-button:nth-child(3) {
+    margin-right: 10px;
 }
 
 .extra-button:hover {
