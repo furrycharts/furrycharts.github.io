@@ -146,6 +146,10 @@ table td:nth-child(2) {
     background-color: #555;
 }
 
+.section-header {
+    text-align: center; /* Center the section headers */
+}
+
 /* Media Query for Small Screens */
 @media (max-width: 1023px) {
     .container {
